@@ -19,6 +19,7 @@ while True:
     pm = local_time.tm_hour > 12
     colon = ~colon
 
+    display.clear()
     display.print_number_str(time_str)
     display.set_colon(colon)
     set_pm(pm)

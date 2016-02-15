@@ -14,6 +14,7 @@ sensor = DS18B20(DEVICE)
 
 while True:
     temperature = sensor.read_fahrenheit()
+    display.clear()
     display.print_number_str('%d ' % round(temperature))
     display.set_digit_raw(3, 0x63) # degree symbol
     display.write_display()

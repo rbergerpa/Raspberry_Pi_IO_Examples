@@ -2,6 +2,7 @@
 
 class DS18B20:
     # TODO default device to first found
+    # TODO throw exception if device file not found
     def __init__(self, device):
         self.device = device
 
